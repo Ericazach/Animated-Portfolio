@@ -5,10 +5,7 @@ import { TextGenerateEffect } from "./ui/text-generate-effect";
 
 const Hero = () => {
   return (
-    <div
-      id="home"
-      className="flex flex-col h-screen md:flex-row justify-center items-center md:mx-8 lg:mx-16"
-    >
+    <div className="flex flex-col h-screen md:flex-row justify-center items-center md:mx-8 lg:mx-16">
       {/* IMAGE CONTAINER */}
       <div className="h-1/2 w-full md:w-full md:h-full relative ">
         <Image
@@ -35,12 +32,12 @@ const Hero = () => {
         </p>
         <div className="flex gap-4 mt-6">
           <Link href="#contact">
-            <button className="text-white bg-[#29727C] hover:bg-[#DD798F] rounded-md px-4 py-2">
+            <button className="text-neutral-200 bg-[#29727C] hover:bg-[#DD798F] rounded-md px-4 py-2">
               Contact me!
             </button>
           </Link>
           <Link href="#projects">
-            <button className="text-white bg-[#DD798F] hover:bg-[#29727C] rounded-md px-4 py-2 ">
+            <button className="text-neutral-200 bg-[#DD798F] hover:bg-secondary-100 rounded-md px-4 py-2 ">
               My Work
             </button>
           </Link>

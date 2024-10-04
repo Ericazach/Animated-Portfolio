@@ -10,7 +10,7 @@ const navItems = [
 
 const Navbar = () => {
   return (
-    <div>
+    <div >
       <FloatingNav navItems={navItems} />
     </div>
   );
