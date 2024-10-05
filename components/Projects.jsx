@@ -29,7 +29,7 @@ function Projects() {
         {projects.map((item) => (
           <div key={item.id}>
             <WobbleCard
-              className="dark:bg-gradient-to-b dark:from-[#1d3651] dark:to-[#531422] bg-gray-700"
+              className="dark:bg-gradient-to-b dark:from-[#1d3651] dark:to-[#531422] bg-gradient-to-b from-[#6887a8] to-[#61353e]"
               containerClassName="max-w-3xl md:max-h-[80vh] lg:max-h-[80vh]"
             >
               <div className="flex flex-col items-center justify-center">
