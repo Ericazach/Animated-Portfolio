@@ -51,13 +51,13 @@ function About() {
         </div>
         {/* SKILL TITLE */}
         <div
-          className="flex flex-col gap-4 justify-center self-start py-10 md:py-24 px-4 md:px-16"
+          className="flex flex-col gap-4 justify-center self-start py-16 md:py-32 px-4 md:px-16"
           ref={skillRef}
         >
           <motion.h1
             initial={{ x: "-600px" }}
             animate={isSkillRefInView ? { x: 0 } : {}}
-            transition={{ delay: 0.2, duration: 0.5 }}
+            transition={{ delay: 0.1, duration: 0.2 }}
             className="font-bold text-xl md:text-3xl lg:text-4xl uppercase text-neutral-200"
           >
             Skills
@@ -67,8 +67,8 @@ function About() {
           <motion.div
             initial={{ x: "-950px" }}
             animate={isSkillRefInView ? { x: 0 } : {}}
-            transition={{ delay: 0.4, duration: 0.5 }}
-            className="flex gap-2 flex-wrap "
+            transition={{ delay: 0.2, duration: 0.3 }}
+            className="flex gap-2 flex-wrap mt-6 md:mt-10"
           >
             <div className="rounded  p-2 text-sm cursor-pointer dark:bg-gray-800 bg-secondary-100 text-white hover:bg-white hover:text-black">
               JavaScript

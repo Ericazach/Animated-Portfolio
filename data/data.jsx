@@ -7,7 +7,7 @@ export const jobs = [
       { date: "August 2023 - Present" },
       {
         title:
-          "Developed new features for an e-commerce platform. Contributing to the development of an app designed to help the Latin community abroad stay connected. Responsible for identifying and fixing bugs, as well as implementing new features to enhance the user experience.",
+          "Developed new features for an e-commerce platform and contributed to an app connecting the Latin community abroad. Responsible for bug fixes and enhancing user experience through feature implementation.",
       },
     ],
   },
@@ -19,7 +19,7 @@ export const jobs = [
       { date: "April 2022 - Present" },
       {
         title:
-          " Managed and coordinated reservations from platforms like Booking and Airbnb, ensuring seamless communication and smooth operations. Oversaw the check-in and check-out process to provide an excellent guest experience, promptly and efficiently handling any issues. Led a team to optimize workflow, maintain high service standards, and ensure guest satisfaction throughout their stay.",
+          "Managed reservations from Booking and Airbnb, ensuring smooth operations and seamless communication. Oversaw check-in/check-out processes to enhance guest experiences and efficiently resolved issues. Led a team to optimize workflows and maintain high service standards for guest satisfaction.",
       },
     ],
   },
@@ -31,8 +31,27 @@ export const jobs = [
       { date: "October 2019 - March 2020" },
       {
         title:
-          "Performed detailed night audits, ensuring financial accuracy and smooth operations. As a multilingual receptionist, I provided seamless communication and outstanding service to international guests. Additionally, I handled concierge tasks, offering tailored recommendations and ensuring guests had a memorable and comfortable stay.",
+          "Conducted night audits for financial accuracy and smooth operations. As a multilingual receptionist, I ensured seamless communication and excellent service for international guests while managing concierge tasks to provide tailored recommendations for a memorable stay.",
       },
     ],
+  },
+];
+
+export const projects = [
+  {
+    id: 1,
+    title: "PickMe - Activity Picker App",
+    des: "Your go-to app for easy decision-making! 🎯 Enter your options, click once, and let PickMe randomly choose the perfect activity—no debates, just fun! ",
+    img: "/pickme.png",
+    iconLists: ["/reactnative.png", "/appwritte.svg"],
+    link: "https://github.com/Ericazach/PickMe",
+  },
+  {
+    id: 2,
+    title: "PlayerPath - Game organization App",
+    des: "Level up your game! Keep track of your achievements, missions, and stats all in one spot, so you never lose sight of your goals! 🎮✨",
+    img: "/playerpath.png",
+    iconLists: ["/re.svg", "/javascript.png", "/node.png", "/mongo.png"],
+    link: "https://player-path.fly.dev",
   },
 ];

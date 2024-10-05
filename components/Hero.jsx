@@ -20,15 +20,9 @@ const Hero = () => {
         {/* <h1 className="text-4xl mb-4 md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white">
           Turning Ideas into Code Magic
         </h1> */}
-        <TextGenerateEffect
-          className=""
-          words="Turning Ideas into Code Magic"
-        />
-        <p className="md:text-lg lg:text-2xl text-white mt-4">
-          Welcome to my portfolio! I’m a software developer with a passion for
-          crafting efficient, creative solutions. My mission is to turn complex
-          ideas into user-friendly apps that make an impact. Let’s build
-          something amazing together!
+        <TextGenerateEffect className="" words="Hi, I'm Erica!" />
+        <p className="text-2xl md:text-3xl lg:text-4xl text-white mt-4">
+          Full Stack Web Developer
         </p>
         <div className="flex gap-4 mt-6">
           <Link href="#contact">
