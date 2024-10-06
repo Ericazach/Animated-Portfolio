@@ -2,11 +2,11 @@
 
 import React, { useState, useEffect } from "react";
 import animationData from "@/data/confetti.json";
-import Lottie from "react-lottie";
 import ContactForm from "./ContactForm";
 
 function ContactPage() {
   const [copied, setCopied] = useState(false);
+  const [Lottie, setLottie] = useState(null); // State to hold the dynamically imported Lottie component
 
   const defaultOptions = {
     loop: true, // Lottie should loop
@@ -44,6 +44,16 @@ function ContactPage() {
     }
   }, [copied]); // Only run this effect when `copied` changes
 
+  // Dynamically import Lottie on client mount
+  useEffect(() => {
+    const loadLottie = async () => {
+      const { default: LottieComponent } = await import("react-lottie");
+      setLottie(() => LottieComponent);
+    };
+
+    loadLottie(); // Invoke the function to load Lottie
+  }, []);
+
   return (
     <div
       className="mx-4 my-24 flex gap-12 md:gap-0 flex-col md:flex-row"
@@ -54,11 +64,12 @@ function ContactPage() {
           Drop me a message or copy my email
         </h1>
         <div className="relative">
-          {copied && (
-            <div className="absolute bottom-0 -left-24 ">
-              <Lottie options={defaultOptions} height={200} width={400} />
-            </div>
-          )}
+          {copied &&
+            Lottie && ( // Check if Lottie has been loaded
+              <div className="absolute bottom-0 -left-24">
+                <Lottie options={defaultOptions} height={200} width={400} />
+              </div>
+            )}
           <button
             type="button"
             onClick={handleCopy}
