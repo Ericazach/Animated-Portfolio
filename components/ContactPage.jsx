@@ -1,7 +1,7 @@
 "use client";
 
-import React, { useState } from "react";
-import animationData from "../public/confeti.json";
+import React, { useState, useEffect } from "react";
+import animationData from "@/data/confetti.json";
 import Lottie from "react-lottie";
 import ContactForm from "./ContactForm";
 
@@ -9,8 +9,8 @@ function ContactPage() {
   const [copied, setCopied] = useState(false);
 
   const defaultOptions = {
-    loop: copied,
-    autoplay: copied,
+    loop: true, // Lottie should loop
+    autoplay: copied, // Autoplay based on copied state
     animationData: animationData,
     rendererSettings: {
       preserveAspectRatio: "xMidYMid slice",
@@ -20,37 +20,49 @@ function ContactPage() {
   const handleCopy = () => {
     if (navigator.clipboard) {
       const text = "ericazach@gmail.com";
-      navigator.clipboard.writeText(text);
-      setCopied(true);
-      setTimeout(() => setCopied(false), 2000);
+      navigator.clipboard
+        .writeText(text)
+        .then(() => {
+          setCopied(true); // Set copied to true when the text is successfully copied
+        })
+        .catch((err) => {
+          console.error("Failed to copy: ", err);
+        });
     } else {
       console.error("Clipboard API is not available.");
     }
   };
+
+  // Reset copied state after 2 seconds
+  useEffect(() => {
+    if (copied) {
+      const timer = setTimeout(() => {
+        setCopied(false); // Reset copied state after 2 seconds
+      }, 2000);
+
+      return () => clearTimeout(timer); // Cleanup the timer on unmount
+    }
+  }, [copied]); // Only run this effect when `copied` changes
 
   return (
     <div
       className="mx-4 my-24 flex gap-12 md:gap-0 flex-col md:flex-row"
       id="contact"
     >
-      <div>
-        <h1 className="w-full md:px-10 text-xl md:text-2xl lg:text-6xl font-bold text-white">
+      <div className="w-full flex flex-col justify-center items-center gap-10">
+        <h1 className="w-full md:px-8 text-center text-2xl md:text-4xl font-bold text-white">
           Drop me a message or copy my email
         </h1>
         <div className="relative">
           {copied && (
-            <div className="absolute -bottom-5 right-0">
-              <Lottie
-                options={{ ...defaultOptions, autoplay: true }}
-                height={200}
-                width={400}
-              />
+            <div className="absolute bottom-0 -left-24 ">
+              <Lottie options={defaultOptions} height={200} width={400} />
             </div>
           )}
           <button
             type="button"
             onClick={handleCopy}
-            className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
+            className="mx-2 md:mx-20 text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
           >
             {copied ? "Email is Copied!" : "Copy my Email"}
           </button>
