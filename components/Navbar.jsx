@@ -10,7 +10,7 @@ const navItems = [
 
 const Navbar = () => {
   return (
-    <div className="">
+    <div className="hidden md:block">
       <FloatingNav navItems={navItems} />
     </div>
   );

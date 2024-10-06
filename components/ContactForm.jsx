@@ -42,7 +42,7 @@ function ContactForm() {
           rows={6}
           name="user_message"
           id="user_message"
-          className="block py-4 px-0 w-full text-sm text-neutral-200 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-neutral-200 dark:border-gray-400 dark:focus:neutral-200 focus:outline-none focus:ring-0 focus:border-neutral-200 peer resize-none"
+          className="block py-4 px-0 w-full text-sm text-neutral-200 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-neutral-200 dark:border-gray-700 dark:focus:neutral-200 focus:outline-none focus:ring-0 focus:border-neutral-200 peer resize-none"
           required
         />
         <label

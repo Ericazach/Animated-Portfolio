@@ -20,7 +20,7 @@ function Projects() {
       <motion.h1
         animate={isProjectRefInView ? { opacity: 1 } : { opacity: 0 }}
         transition={{ delay: 0.4, duration: 0.5 }}
-        className="font-bold lg:text-6xl md:text-5xl text-3xl text-neutral-200"
+        className="font-bold mt-12 lg:text-6xl md:text-5xl text-3xl text-neutral-200"
       >
         My Projects
       </motion.h1>
@@ -29,7 +29,7 @@ function Projects() {
         {projects.map((item) => (
           <div key={item.id}>
             <WobbleCard
-              className="dark:bg-gradient-to-b dark:from-[#1d3651] dark:to-[#531422] bg-gradient-to-b from-[#6887a8] to-[#61353e]"
+              className="dark:bg-gradient-to-b dark:from-[#1d3651] dark:to-[#531422] bg-gradient-to-b from-[#6887a8] to-[#642d39]"
               containerClassName="max-w-3xl md:max-h-[80vh] lg:max-h-[80vh]"
             >
               <div className="flex flex-col items-center justify-center">
