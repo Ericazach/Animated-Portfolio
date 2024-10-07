@@ -22,7 +22,7 @@ function Projects() {
         <motion.h1
           animate={isProjectRefInView ? { opacity: 1 } : { opacity: 0 }}
           transition={{ delay: 0.4, duration: 0.5 }}
-          className="w-screen gap-2 md:gap-4 flex items-center justify-center font-extrabold font-ralewayLight uppercase mt-12 lg:text-5xl md:text-4xl text-2xl text-neutral-200"
+          className="w-screen gap-2 md:gap-4 flex items-center justify-center font-extrabold font-ralewayLight uppercase mt-12 lg:text-5xl md:text-4xl text-xl text-neutral-200"
         >
           Check <span className=" text-[#DD798F]">my work</span>
         </motion.h1>
