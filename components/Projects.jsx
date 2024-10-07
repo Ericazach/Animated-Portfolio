@@ -18,7 +18,7 @@ function Projects() {
       className="flex flex-col items-center justify-center md:my-24"
     >
       <div className="flex items-center justify-center gap-5">
-        <hr className="w-1/2 border-primary-100 dark:border-secondary-100" />
+        {/* <hr className="w-full border-primary-100 dark:border-secondary-100" /> */}
         <motion.h1
           animate={isProjectRefInView ? { opacity: 1 } : { opacity: 0 }}
           transition={{ delay: 0.4, duration: 0.5 }}
@@ -26,7 +26,7 @@ function Projects() {
         >
           Check <span className=" text-[#DD798F]">my work</span>
         </motion.h1>
-        <hr className="w-1/2 border-primary-100 dark:border-secondary-100" />
+        {/* <hr className="w-full border-primary-100 dark:border-secondary-100" /> */}
       </div>
 
       <div className="flex flex-col md:flex-row items-center justify-center p-4 gap-16 md:mx-16 mt-10">
