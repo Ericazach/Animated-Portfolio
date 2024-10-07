@@ -17,13 +17,17 @@ function Projects() {
       id="projects"
       className="flex flex-col items-center justify-center md:my-24"
     >
-      <motion.h1
-        animate={isProjectRefInView ? { opacity: 1 } : { opacity: 0 }}
-        transition={{ delay: 0.4, duration: 0.5 }}
-        className="font-bold mt-12 lg:text-6xl md:text-5xl text-3xl text-neutral-200"
-      >
-        My Projects
-      </motion.h1>
+      <div className="flex items-center justify-center gap-5">
+        <hr className="w-1/2 border-primary-100 dark:border-secondary-100" />
+        <motion.h1
+          animate={isProjectRefInView ? { opacity: 1 } : { opacity: 0 }}
+          transition={{ delay: 0.4, duration: 0.5 }}
+          className="w-screen gap-2 md:gap-4 flex items-center justify-center font-extrabold font-ralewayLight uppercase mt-12 lg:text-5xl md:text-4xl text-2xl text-neutral-200"
+        >
+          Check <span className=" text-[#DD798F]">my work</span>
+        </motion.h1>
+        <hr className="w-1/2 border-primary-100 dark:border-secondary-100" />
+      </div>
 
       <div className="flex flex-col md:flex-row items-center justify-center p-4 gap-16 md:mx-16 mt-10">
         {projects.map((item) => (
@@ -47,7 +51,7 @@ function Projects() {
                   />
                 </div>
 
-                <h1 className="font-bold lg:text-2xl md:text-xl text-base text-neutral-200">
+                <h1 className="font-extrabold lg:text-2xl md:text-xl text-base text-neutral-200 font-inter">
                   {item.title}
                 </h1>
 
@@ -79,7 +83,7 @@ function Projects() {
                   {/* Wrap the "Check the page" text and icon in a Link */}
                   <Link href={item.link} target="_blank">
                     <div className="ms-4 flex justify-center items-center cursor-pointer gap-2">
-                      <span className="lg:text-xl md:text-xs text-sm text-neutral-200">
+                      <span className="lg:text-xl md:text-xs text-sm text-neutral-200 font-ralewayLight">
                         Visit the page
                       </span>
                       <NorthEastIcon

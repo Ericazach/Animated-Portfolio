@@ -62,10 +62,10 @@ export const Timeline = ({ data }) => {
 
               {/* Render content */}
               {item.content && (
-                <div className="text-neutral-300 dark:text-neutral-300 text-sm md:text-base">
+                <div className="text-neutral-300 font-inter dark:text-neutral-300 text-sm md:text-base">
                   {item.content.map((contentItem, idx) => (
                     <div key={idx} className="flex flex-col gap-1">
-                      <p className="italic">{contentItem.date}</p>
+                      <p className="italic font-inter">{contentItem.date}</p>
                       <p>{contentItem.title}</p>
                     </div>
                   ))}

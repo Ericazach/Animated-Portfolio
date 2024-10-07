@@ -18,11 +18,11 @@ const Hero = () => {
       {/* TEXT CONTAINER */}
       <div className="h-1/2 w-full md:w-full md:h-full flex-col flex justify-center px-4 md:px-8">
         <div className="flex flex-col relative">
-          <h1 className="text-[7rem] uppercase md:text-[10rem] lg:text-[12rem] font-extrabold text-neutral-100 opacity-30">
+          <h1 className="text-[7rem] uppercase md:text-[10rem] lg:text-[12rem] font-raleway text-neutral-100 opacity-30">
             Erica
           </h1>
           <TextGenerateEffect
-            className="md:text-3xl absolute lg:text-4xl bottom-4 md:bottom-6 left-3 font-bold text-neutral-200"
+            className="md:text-3xl absolute italic lg:text-4xl bottom-4 md:bottom-6 left-3 font-bold text-neutral-200"
             words="Full Stack Web Developer"
           />
         </div>

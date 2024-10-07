@@ -60,8 +60,10 @@ function ContactPage() {
       id="contact"
     >
       <div className="w-full flex flex-col justify-center items-center gap-10">
-        <h1 className="w-full md:px-8 text-center text-2xl md:text-4xl font-bold text-white">
-          Drop me a message or copy my email
+        <h1 className="w-full md:px-8 text-center text-3xl md:text-5xl font-raleway uppercase italic relative text-neutral-300">
+          Drop me a message or
+          <br />
+          copy my email
         </h1>
         <div className="relative">
           {copied &&

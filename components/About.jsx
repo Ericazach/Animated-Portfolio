@@ -26,7 +26,7 @@ function About() {
           <motion.h1
             animate={isAboutRefInView ? { opacity: 1 } : { opacity: 0 }}
             transition={{ delay: 0.4, duration: 0.5 }}
-            className="font-bold text-xl md:text-3xl lg:text-4xl uppercase text-neutral-200"
+            className="font-bold font-msMadi text-3xl md:text-4xl lg:text-6xl  text-neutral-200"
           >
             About me
           </motion.h1>
@@ -42,7 +42,7 @@ function About() {
           />
         </div>
         <div className="mt-3 md:mt-8 px-4 md:px-14">
-          <p className="text-sm md:text-base lg:text-lg text-white mt-8">
+          <p className="text-sm font-inter italic md:text-base lg:text-lg text-white mt-8">
             Welcome to my portfolio! I’m a software developer with a passion for
             crafting efficient, creative solutions. My mission is to turn
             complex ideas into user-friendly apps that make an impact. Let’s
@@ -58,7 +58,7 @@ function About() {
             initial={{ x: "-600px" }}
             animate={isSkillRefInView ? { x: 0 } : {}}
             transition={{ delay: 0.1, duration: 0.2 }}
-            className="font-bold text-xl md:text-3xl lg:text-4xl uppercase text-neutral-200"
+            className="font-raleway tracking-wider text-xl md:text-3xl lg:text-4xl uppercase text-neutral-200 "
           >
             Skills
           </motion.h1>

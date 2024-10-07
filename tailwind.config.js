@@ -1,3 +1,4 @@
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
 	darkMode: ["class"],
@@ -8,6 +9,14 @@ module.exports = {
 	],
 	theme: {
 		extend: {
+			fontFamily: {
+				roboto: ['var(--font-roboto)'],
+				msMadi: ['var(--font-msMadi)'],
+				raleway: ['var(--font-raleway)'],
+				ralewayLight: ['var(--font-ralewayLight)'],
+				inter: ['var(--font-inter)'],
+				nova: ['var(--font-nova)'],
+			},
 			colors: {
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',

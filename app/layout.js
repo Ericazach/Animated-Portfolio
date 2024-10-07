@@ -1,7 +1,7 @@
 import localFont from "next/font/local";
-import { Roboto } from 'next/font/google'
 import "./globals.css";
 import { ThemeProvider } from "./provider";
+import { roboto, msMadi, raleway, ralewayLight, inter, nova } from "./utils/fonts";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -14,10 +14,6 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
-const roboto = Roboto({
-  weight: '400',
-  subsets: ['latin'],
-})
 
 export const metadata = {
   title: "Erica's Portfolio",
@@ -28,7 +24,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} $ antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${roboto} ${msMadi} ${raleway} ${ralewayLight} ${inter} ${nova} antialiased`}
       >
         <ThemeProvider
           attribute="class"
