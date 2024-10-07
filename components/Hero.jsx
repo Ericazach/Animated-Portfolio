@@ -5,9 +5,9 @@ import { TextGenerateEffect } from "./ui/text-generate-effect";
 
 const Hero = () => {
   return (
-    <div className="flex flex-col h-screen md:flex-row justify-center items-center md:mx-8 lg:mx-16">
+    <div className="flex flex-col md:h-screen md:flex-row md:justify-center md:items-center md:mx-8 lg:mx-16 my-24 md:my-0">
       {/* IMAGE CONTAINER */}
-      <div className="h-1/2 w-full md:w-full md:h-full relative ">
+      <div className="hidden md:f md:block md:h1/2  md:w-full md:h-full relative ">
         <Image
           src="/girl.png"
           alt="Erica's Profile"
@@ -16,7 +16,7 @@ const Hero = () => {
         />
       </div>
       {/* TEXT CONTAINER */}
-      <div className="h-1/2 w-full md:w-full md:h-full flex-col flex justify-center px-8">
+      <div className="h-1/2 w-full md:w-full md:h-full flex-col flex justify-center px-4 md:px-8">
         <div className="flex flex-col relative">
           <h1 className="text-[7rem] uppercase md:text-[10rem] lg:text-[12rem] font-extrabold text-neutral-100 opacity-30">
             Erica
