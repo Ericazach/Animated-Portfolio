@@ -80,13 +80,13 @@ function ContactForm() {
       </button>
 
       {success && (
-        <p className="text-green-500 text-center font-medium">
+        <p className="text-green-300 text-center font-medium mt-6">
           Thank you for your message!
         </p>
       )}
 
       {error && (
-        <p className="text-red-500 text-center font-medium">
+        <p className="text-red-300 text-center font-medium mt-6">
           Something went wrong. Please try again later.
         </p>
       )}

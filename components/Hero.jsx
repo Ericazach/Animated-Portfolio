@@ -5,7 +5,7 @@ import { TextGenerateEffect } from "./ui/text-generate-effect";
 
 const Hero = () => {
   return (
-    <div className="flex flex-col md:h-screen md:flex-row md:justify-center md:items-center md:mx-8 lg:mx-16 my-24 md:my-0">
+    <div className="flex flex-col md:h-screen md:flex-row md:justify-center md:items-center md:mx-8 lg:mx-16 my-12 md:my-0">
       {/* IMAGE CONTAINER */}
       <div className="hidden md:f md:block md:h1/2  md:w-full md:h-full relative ">
         <Image
@@ -29,7 +29,7 @@ const Hero = () => {
         {/* <p className="text-2xl md:text-3xl lg:text-4xl text-white mt-4">
           Full Stack Web Developer
         </p> */}
-        <div className="flex gap-4 mt-6 mx-2">
+        <div className="flex gap-4 mt-6 mb-12 mx-2">
           <Link href="#contact">
             <button className="text-neutral-200 font-bold bg-[#29727C] hover:bg-[#DD798F] rounded-md px-4 py-2">
               Contact me!
