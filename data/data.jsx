@@ -48,10 +48,10 @@ export const projects = [
   },
   {
     id: 2,
-    title: "PlayerPath - Game organization App",
-    des: "Level up your game! Keep track of your achievements, missions, and stats all in one spot, so you never lose sight of your goals! 🎮✨",
-    img: "/playerpath.png",
-    iconLists: ["/re.svg", "/javascript.png", "/node.png", "/mongo.png"],
-    link: "https://player-path.fly.dev",
+    title: "Erica's Portfolio - Minimalistic Portfolio",
+    des: "A sleek, minimalistic portfolio showcasing projects, and skills. Built with the power of React, Tailwind, and Next.js—fully optimized and deployed on Vercel. 🚀",
+    img: "/portfolio.png",
+    iconLists: ["/react.png", "/taildwind.png", "/next.png", "vercel.svg"],
+    link: "https://erica-sanchez.vercel.app/",
   },
 ];
