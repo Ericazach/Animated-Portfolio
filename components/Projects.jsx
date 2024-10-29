@@ -29,7 +29,7 @@ function Projects() {
         {/* <hr className="w-full border-primary-100 dark:border-secondary-100" /> */}
       </div>
 
-      <div className="flex flex-col md:flex-row items-center justify-center p-4 gap-16 md:mx-16 mt-10">
+      <div className="flex flex-col md:flex-row md:flex-wrap items-center justify-center p-4 gap-16 md:mx-16 mt-10">
         {projects.map((item) => (
           <div key={item.id}>
             <WobbleCard

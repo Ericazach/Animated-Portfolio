@@ -54,4 +54,12 @@ export const projects = [
     iconLists: ["/react.png", "/taildwind.png", "/next.png", "vercel.svg"],
     link: "https://erica-sanchez.vercel.app/",
   },
+  {
+    id: 3,
+    title: "Player Path  - Games Tracker",
+    des: " 🎮 Introducing PlayerPath, an app to track video game progress, achievements, and goals—all in one spot. Built with React, Appwrite, and TypeScript, it’s a streamlined tool for organizing your gaming journey. Check it out live on Vercel! 🚀",
+    img: "/player-pathmock.png",
+    iconLists: ["/react.png", "/taildwind.png", "/appwritte.svg", "vercel.svg"],
+    link: "https://player-path.vercel.app",
+  },
 ];
